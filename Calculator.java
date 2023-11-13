@@ -8,14 +8,14 @@ public class Calculator {
     } // Default COnstructor 
 
    // add
-    public void add(int number) {
-        result += number;
+    public void add(int number1 , int number2) {
+        result = number1 + number2;
     } // end of add
 
 
     // substract
-    public void substract(int number){
-        result -= number;
+    public void substract(int number1, int number2){
+        result = number1 - number2 ;
     } // end substract
 
     // multiply
@@ -42,22 +42,22 @@ public class Calculator {
 Calculator Mycalculator = new Calculator();
 
 // add num1
-        Mycalculator.add(num1);
-        System.out.println(" The result of the calculator is "+Mycalculator.getResult());
+        Mycalculator.add(num1,num2);
+        System.out.println(" The sum of 56 and 78 is "+Mycalculator.getResult());
 
 // substract num2
-        Mycalculator.substract(num2);
-        System.out.println(" The result of the calculator is "+Mycalculator.getResult());
+        Mycalculator.substract(num2,num1);
+        System.out.println(" The diffrence of 56 and 78 is "+Mycalculator.getResult());
 
 //multiply num1 and num2
         Mycalculator.multiply(num1, num2);
-        System.out.println(" The result of the calculator is "+Mycalculator.getResult());
+        System.out.println(" The product of 56 and 78 is "+Mycalculator.getResult());
 
 // divide num1 and num2
         Mycalculator.divide(num1, num2);
 
 // display the result 
-        System.out.println(" The result of the calculator is "+Mycalculator.getResult());
+        System.out.println(" The quotient of 56 and 78 is "+Mycalculator.getResult());
 
 
     }
