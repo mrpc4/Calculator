@@ -1,64 +1,63 @@
 // Author: Chima Ukachukwu
 
 public class Calculator {
-    private int result;
 
-    public Calculator() {
-        result = 0;
-    } // Default COnstructor 
+  private int result;
 
-   // add
-    public void add(int number1 , int number2) {
-        result = number1 + number2;
-    } // end of add
+  public Calculator() {
+    this.result = 0;
+  } // Default Constructor
 
+  // Add
+  public void add(int number1, int number2) {
+    this.result = number1 + number2;
+  } // End of add
 
-    // substract
-    public void substract(int number1, int number2){
-        result = number1 - number2 ;
-    } // end substract
+  // Subtract
+  public void subtract(int number1, int number2) {
+    this.result = number1 - number2;
+  } // End of subtract
 
-    // multiply
-    public void multiply(int number1, int number2){
-        result = number1 * number2;
-    }
+  // Multiply
+  public void multiply(int number1, int number2) {
+    this.result = number1 * number2;
+  }
 
-// divide
-    public void divide(int number1, int number2){
-        result = number1 / number2 ; 
-    }
+  // Divide
+  public void divide(int number1, int number2) {
+    this.result = number1 / number2;
+  }
 
-    // display result
-    public int getResult() {
-        return result;
-    }
+  // Display result
+  public int getResult() {
+    return this.result;
+  }
 
-    public static void main(String[] args) {
-//declare 2 numbers
+  public static void main(String[] args) {
+    // Declare 2 numbers
+    int num1 = 56;
+    int num2 = 78;
 
-	int num1 = 56, num2 = 78;
-// instantiate an object calculator
+    // Instantiate an object calculator
     System.out.println("My name is Chima Ukachukwu, let me be your calculator for today!");
-Calculator Mycalculator = new Calculator();
+    Calculator myCalculator = new Calculator();
 
-// add num1
-        Mycalculator.add(num1,num2);
-        System.out.println(" The sum of 56 and 78 is "+Mycalculator.getResult());
+    // Add num1 and num2
+    myCalculator.add(num1, num2);
+    System.out.println("The sum of 56 and 78 is " + myCalculator.getResult());
 
-// substract num2
-        Mycalculator.substract(num2,num1);
-        System.out.println(" The diffrence of 56 and 78 is "+Mycalculator.getResult());
+    // Subtract num2 from num1
+    myCalculator.subtract(num2, num1);
+    System.out.println("The difference of 56 and 78 is " + myCalculator.getResult());
 
-//multiply num1 and num2
-        Mycalculator.multiply(num1, num2);
-        System.out.println(" The product of 56 and 78 is "+Mycalculator.getResult());
+    // Multiply num1 and num2
+    myCalculator.multiply(num1, num2);
+    System.out.println("The product of 56 and 78 is " + myCalculator.getResult());
 
-// divide num1 and num2
-        Mycalculator.divide(num1, num2);
+    // Divide num1 by num2
+    myCalculator.divide(num1, num2);
 
-// display the result 
-        System.out.println(" The quotient of 56 and 78 is "+Mycalculator.getResult());
-
-
-    }
+    // Display the result
+    System.out.println("The quotient of 56 and 78 is " + myCalculator.getResult());
+  }
 }
